@@ -4,7 +4,7 @@
 
 # Import the budget data
 
-# Idenitfy variables
+# Identify variables
 
 # Determine number of months in dataset
 
