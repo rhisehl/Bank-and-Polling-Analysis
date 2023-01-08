@@ -12,7 +12,6 @@ greatest_increase = []
 greatest_decrease = []
 
 # Import the budget data
-#csvpath = 'C:/Users/rhise/Documents/GitHub/python-challenge/PyBank/Resources/budget_data.csv'
 csvpath = os.path.join("","Resources","budget_data.csv")
 
 with open(csvpath, encoding='utf') as csvfile:
@@ -22,7 +21,7 @@ with open(csvpath, encoding='utf') as csvfile:
     for row in csvreader:
         months += 1
 # Determine net total amount of profit / losses over entire period
-
+        total_profit = total_profit + int(row[1])
 # Determine changes in profit / losses over entire period
 
 # Determine average change in profit / losses
@@ -34,7 +33,7 @@ with open(csvpath, encoding='utf') as csvfile:
 # Print analysis to screen
 print("Financial Analysis /n  ----------------------------")
 print(f"Total months: {months}") #insert variable for total # months
-print("Total: ") #insert total profit/loss
+print(f"Total: ${total_profit}") #insert total profit/loss
 print("Average Change: ") #insert variable of average change
 print("Greatest Increase in Profits: ") #insert Mon-dd ($xxxxxx)
 print("Greatest Decrease in Profits: ") #insert Mon-dd ($xxxxxx)
