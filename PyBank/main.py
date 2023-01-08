@@ -31,10 +31,10 @@ with open(csvpath, encoding='utf') as csvfile:
 # Determine greatest decrease in profits (date and amount) over the entire period
 
 # Print analysis to screen
-print("Financial Analysis /n  ----------------------------")
+print("Financial Analysis \n  ----------------------------")
 print(f"Total months: {months}") #insert variable for total # months
 print(f"Total: ${total_profit}") #insert total profit/loss
 print("Average Change: ") #insert variable of average change
 print("Greatest Increase in Profits: ") #insert Mon-dd ($xxxxxx)
 print("Greatest Decrease in Profits: ") #insert Mon-dd ($xxxxxx)
-#### consolidate all print statements into a single line with /n statements
+#### consolidate all print statements into a single line with \n statements
