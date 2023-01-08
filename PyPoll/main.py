@@ -1,9 +1,12 @@
 # PyPoll Python Challenge
 
 # Import modules
-
+import os, csv
 # Import the budget data
-
+csvpath = os.path.join("","Resources","election_data.csv")
+with open(csvpath) as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=",")
+    csv_header = next(csvreader)
 # Identify variables
 
 # Determine total number of votes cast
